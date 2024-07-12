@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">i</a></li>
+            <li><a href="home.html">H</a></li>
+            <li><a href="aboutus.html">c</a></li>
+        </ul></nav>
+    
+    <style>
+        body{
+    background: rgb(149, 195, 196);
+    background: linear-gradient(0deg,rgb(1, 29, 56) 0%, rgb(176, 213, 211)86%);
+    background-attachment: fixed;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: #94d0dc;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20vh auto auto;
+    background-color: rgb(42, 177, 195);
+    border:  2px solid rgba(225,255,2550);
+    backdrop-filter: blur(15px);
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-box h1{
+    text-align: center;
+    color: #5d0c7a;
+    font-size: 32px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form-box .input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #f8fefe;
+ 
+    
+}
+p, h2{
+    color: #f3f0f0;
+    font-size: 44px;
+}
+
+.form-box .input-box input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: #340656;
+    font-size: 20px;
+
+}
+input::placeholder{
+    color: #fff4f4;
+}
+.btn{
+    background-color: #5d0c7a;
+    color: white;
+    border: 1px solid #5d0c7a;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    box-shadow: 3px 0  10px rgba(0,0,0,.5);
+
+}
+    </style>
+     
+<div class="container">
+    <div class="form-box">
+        <form action="" name="Formfill" onsubmit="return validation()">
+
+            <h1> ContactUs Page</h1>
+            <p id="result"></p>
+
+            <div class="input-box">
+                <i class="bx bxs-user"></i>
+
+                <input type="text" name="Username" placeholder="Username">
+            </div>
+
+                <box-icon type='solid' name='envelope-open'></box-icon>
+
+            <div class="input-box">
+                <i class= 'bx bxs-envelope' ></i>
+                <input type="email" name="Email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" name="Password" placeholder="Password">
+            </div>
+
+            <div class="input-box">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" name="CPassword" placeholder="Confirm Password">
+            </div>
+
+            <div class="button">
+                <input type="submit" class="btn"  value="Register">
+            </div>
+
+            <div class="group">
+                <span><a href="#">Forget-Password</a></span>
+                <span><a href="#"> Login</a></span>
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="popup">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h2>Thank you!!!!💗🥰</h2>
+        <p>Your Registration Successful👍🏻👋👋👋</p>
+        <a href="#"><button>OK</button></a>
+    </div>
+</div>
+
+</body>
+</html>
